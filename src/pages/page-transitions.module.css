@@ -1,0 +1,9 @@
+.all {
+    animation: page;
+    animation-duration: 1s;
+}
+
+@keyframes page {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
