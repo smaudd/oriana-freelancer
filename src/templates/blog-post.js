@@ -24,13 +24,14 @@ export const postQuery = graphql`
     query BlogPostByPath($path: String!) {
         markdownRemark(frontmatter: { path: { eq: $path } } ){
             html
-            excerpt(pruneLength: 160)
             frontmatter {
                 path
                 title
                 author
                 date
+                description
             }
         }
     }
 `
+

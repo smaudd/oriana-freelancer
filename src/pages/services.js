@@ -1,10 +1,13 @@
-import React from 'react'
-import Link from 'gatsby-link'
+import React from 'react';
+import Layout from '../components/layout';
+import transition from './page-transitions.module.css'
 
 const Services = () => (
-            <h1>
-                Our services...
-            </h1>
+    <Layout>
+        <div className={transition.all}>
+            <h1>Our services...</h1>
+        </div>
+    </Layout>
 )
 
 export default Services
