@@ -8,8 +8,6 @@
 import React from "react"
 import PropTypes from "prop-types"
 import { StaticQuery, graphql } from "gatsby"
-import PageTransition from 'gatsby-plugin-page-transitions';
-
 
 import Header from "./header"
 import Navbar from "./navbar"
@@ -49,11 +47,9 @@ const Layout = ({ children }) => (
             paddingTop: 0,
           }}
         >
-        <PageTransition>
         <main
             style={{ height: '80vh' }}
           >{children}</main>
-        </PageTransition>
         </div>
       </>
     )}
