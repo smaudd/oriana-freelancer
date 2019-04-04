@@ -26,8 +26,8 @@ class Navbar extends React.Component {
                 {/* Desktop */}
                 <ul className={navStyles.list}>
                     <button className={navStyles.button}><Link to="/about" className={navStyles.link}>About</Link></button>
-                    <button className={navStyles.button}><Link to="/about" className={navStyles.link}>Services</Link></button>
-                    <button className={navStyles.button}><Link to="/about" className={navStyles.link}>Calendar</Link></button>
+                    <button className={navStyles.button}><Link to="/services" className={navStyles.link}>Services</Link></button>
+                    <button className={navStyles.button}><Link to="/calendar" className={navStyles.link}>Calendar</Link></button>
                     <button className={navStyles.button}><Link to="/blog" className={navStyles.link}>Blog</Link></button>
                 </ul>
                 {/* Mobile */}
@@ -41,8 +41,8 @@ class Navbar extends React.Component {
                     style={this.state.menu ? { display: 'grid' } : { display: 'none' } }
                 >
                     <button className={navStyles.button}><Link to="/about" className={navStyles.link}>About</Link></button>
-                    <button className={navStyles.button}><Link to="/about" className={navStyles.link}>Services</Link></button>
-                    <button className={navStyles.button}><Link to="/about" className={navStyles.link}>Calendar</Link></button>
+                    <button className={navStyles.button}><Link to="/services" className={navStyles.link}>Services</Link></button>
+                    <button className={navStyles.button}><Link to="/calendar" className={navStyles.link}>Calendar</Link></button>
                     <button className={navStyles.button}><Link to="/blog"  className={navStyles.link}>Blog</Link></button>
                 </ul>   
             </nav>
